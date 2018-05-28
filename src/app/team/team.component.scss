@@ -1,0 +1,152 @@
+$paddingtop : 115px;
+$letterSpacinfForFirstBlock : 4px;
+$fontForFirstBlock : 'Oswald', sans-serif;
+$imageWidthPropTeam : 90%;
+$imageMargLPropTeam : 37px;
+$imageMargTPropTeam : 23px;
+
+@mixin paddingforparallax($padding){
+    padding-left: $padding;
+    padding-right: $padding;
+}
+
+
+@mixin fonts($fontForFirstBlock, $fontSize, $fontWeight){
+    font-family: $fontForFirstBlock;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+}
+
+@mixin imageTeam(){
+    width : $imageWidthPropTeam;
+    margin-left: $imageMargLPropTeam;
+    margin-top: $imageMargTPropTeam;
+}
+
+
+.fifthBlock {
+    background: url("../../assets/fifthBlock.jpg") no-repeat fixed 70% 180px;
+    padding: $paddingtop 0px 0px;
+    min-height: 100%;
+    box-sizing: border-box;
+  }
+
+  .line-team {
+  width: 20px;
+  color: #cccccc;
+  margin-left: 7px;
+  height: 1px;
+  background-color: #828282;
+  margin-top: 30px;
+  }
+.text-team {
+  color: #696969;
+  margin-top: -21px;
+  margin-left: 35px;
+  letter-spacing: 2px;
+  @include fonts($fontForFirstBlock, 16px, 1000);
+}
+
+
+.text2-team1 {
+  font: 100% $fontForFirstBlock;
+  margin-top: -21px;
+  margin-left: 235px;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: #adadad;
+}
+
+.line2-team {
+  width: 20px;
+  color: #cccccc;
+  margin-left: 180px;
+  height: 1px;
+  background-color: #828282;
+  margin-top: 20px;
+}
+
+.line2-team1 {
+  width: 20px;
+  color: #cccccc;
+  margin-left: 205px;
+  height: 1px;
+  background-color: #828282;
+  margin-top: 20px;
+}
+
+.text2-team {
+  font: 100% $fontForFirstBlock;
+  margin-top: -21px;
+  margin-left: 210px;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: #adadad;
+}
+.border1-team{
+  margin-top: 50px;
+  margin-left: 400px;
+  border: 1px solid black;
+  width: 360px;
+  height: 530px;
+  img {
+      @include imageTeam();
+  }
+  
+}
+.border2-team {
+  margin-left: 790px;
+  margin-top: -480px;
+  border: 1px solid black;
+  width: 360px;
+  height: 530px;
+  margin-bottom: -100px;
+  img {
+    @include imageTeam();
+  }
+}
+
+.parralUnion {
+    @include paddingforparallax(15px);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+h1 {
+    color: #aca9a9;
+    @include fonts($fontForFirstBlock, 30px, 700);
+    margin: 0;
+    line-height: 1.1;
+  }
+  
+  span {
+    display: block;
+    @include fonts(inherit, 80px, 500);
+    color: #3a3a3a;
+    letter-spacing: $letterSpacinfForFirstBlock;
+  }
+
+.ruska {
+    position: relative;
+    margin-left: 7.5%; }
+    .ruska :before {
+        position: absolute;
+        left: -98px;
+        top: 15px;
+        height: 2px;
+        width: 80px;
+        content: "";
+        background-color: #3a3a3a; }
+
+.border3-team {
+  margin-left: 1180px;
+  margin-top: -585px;
+  border: 1px solid black;
+  width: 360px;
+  height: 530px;
+  img {
+    @include imageTeam();
+  }
+}

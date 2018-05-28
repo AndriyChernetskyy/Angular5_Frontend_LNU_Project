@@ -1,0 +1,126 @@
+$paddingtop : 115px;
+$letterSpacinfForFirstBlock : 4px;
+$letterSpacingForFourthBlock : 2px;
+$specialFont : 'Montserrat', sans-serif;
+$fontForFirstBlock : 'Oswald', sans-serif;
+$textNearPictureFont : 'Roboto', sans-serif;
+$imageWidthPropTeam : 90%;
+$imageMargLPropTeam : 37px;
+$imageMargTPropTeam : 23px;
+
+@mixin paddingforparallax($padding){
+    padding-left: $padding;
+    padding-right: $padding;
+}
+
+@mixin fonts($fontForFirstBlock, $fontSize, $fontWeight){
+    font-family: $fontForFirstBlock;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+}
+
+
+.parallax {
+    background: url("/assets/parallax1.jpg") no-repeat fixed 70% 12px;
+    min-height: 100%;
+    padding: $paddingtop 0 0px;
+  }
+  
+  .ruska {
+    position: relative;
+    margin-left: 7.5%;
+    :before {
+      position: absolute;
+      left: -98px;
+      top: 15px;
+      height: 2px;
+      width: 80px;
+      content: "";
+      background-color: #3a3a3a;
+    }
+  }
+  
+  .parralUnion {
+    @include paddingforparallax(15px);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  h1 {
+    color: #aca9a9;
+    @include fonts($fontForFirstBlock, 30px, 700);
+    margin: 0;
+    line-height: 1.1;
+  }
+  
+  span {
+    display: block;
+    @include fonts(inherit, 80px, 500);
+    color: #3a3a3a;
+    letter-spacing: $letterSpacinfForFirstBlock;
+  }
+  
+  .sle {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  
+  .preforo {
+    margin-top: 79px;
+  }
+  
+  .about_Pic {
+    float: left;
+    width: 50%;
+    position: relative;
+    padding-bottom: 8px;
+  }
+  
+  .preforo img {
+    margin-left: 14px;
+    width: 83%;
+    vertical-align: middle;
+  }
+  
+  .horizontalLine {
+    position: absolute;
+    right: 77px;
+    width: 76.5%;
+    bottom: 1px;
+    height: 5px;
+    background-color: #ffb063;
+  }
+  
+  .verticalLine {
+    position: absolute;
+    background-color: #ffb063;
+    right: 75px;
+    top: 28px;
+    height: 95.5%;
+    width: 5px;
+  }
+  
+  .terx {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    @include paddingforparallax(15px);
+  }
+  
+  .TextNearThePicture {
+    position: inherit;
+    padding-top: 76px;
+    h1 {
+      color: #1b1b1b;
+      @include fonts($fontForFirstBlock, 24px, 600);
+      letter-spacing: $letterSpacingForFourthBlock;
+    }
+    p {
+      margin-top: 25px;
+      color: #717171;
+      @include fonts($textNearPictureFont, 14px, normal);
+      line-height: 28px;
+      margin-bottom: -3px;
+      letter-spacing: .5px;
+    }
+  }

@@ -1,0 +1,116 @@
+$paddingtop : 115px;
+$letterSpacinfForFirstBlock : 4px;
+$fontForFirstBlock : 'Oswald', sans-serif;
+$imageWidthPropTeam : 90%;
+$imageMargLPropTeam : 37px;
+$imageMargTPropTeam : 23px;
+
+@mixin paddingforparallax($padding){
+    padding-left: $padding;
+    padding-right: $padding;
+}
+
+
+@mixin fonts($fontForFirstBlock, $fontSize, $fontWeight){
+    font-family: $fontForFirstBlock;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+}
+
+
+.parralUnion {
+    @include paddingforparallax(15px);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+h1 {
+    color: #aca9a9;
+    @include fonts($fontForFirstBlock, 30px, 700);
+    margin: 0;
+    line-height: 1.1;
+  }
+  
+  span {
+    display: block;
+    @include fonts(inherit, 80px, 500);
+    color: #3a3a3a;
+    letter-spacing: $letterSpacinfForFirstBlock;
+  }
+
+.ruska {
+    position: relative;
+    margin-left: 7.5%; }
+    .ruska :before {
+        position: absolute;
+        left: -98px;
+        top: 15px;
+        height: 2px;
+        width: 80px;
+        content: "";
+        background-color: #3a3a3a; }
+
+.sixthBlock {
+    background: url("../../assets/sixthBlock.jpg") no-repeat fixed 70% 124px;
+    padding: $paddingtop 0px 0px;
+    min-height: 70%;
+  }
+
+  .testimonialBlock {
+    margin: auto;
+    margin-top: 130px;
+    width: 50%;
+    
+    .borderSix {
+      border: .2px solid black;
+      margin-left:185px;
+      width: 419px;
+      margin-top:100ps;
+     }
+ }
+
+  .borderWithImg {
+    border: .1px solid black;
+    margin-top: -165px;
+    height: 179px;
+    width: 185px;
+
+    img{
+      margin-left: 6px;
+      margin-right: 6px;
+      margin-top: -1px;
+      width: 173px;
+    }
+  }
+
+  .textNearBorder {
+    margin-left: 620px;
+    margin-top: -10px;
+    
+    h1 {
+      color: #696969;
+      letter-spacing: 2px;
+      @include fonts($fontForFirstBlock, 20px, 700);
+    }
+
+    h2 {
+      color: #979696;
+      @include fonts($fontForFirstBlock, 14px, normal);
+      letter-spacing: 1.5px;
+      margin-top: 7px;
+    }
+  }
+
+  .textP {
+    margin-left: 210px;
+    margin-top: 30px;
+    p {
+      width: 580px;
+      font-size: 17px;
+      color: #8a8a8a;
+      word-spacing: 1px;
+      letter-spacing: .9px;
+      line-height: 26px;
+
+    }
+  }

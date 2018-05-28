@@ -1,0 +1,135 @@
+.thirdBlock {
+  background: url("../../assets/thirdBlock.jpg") no-repeat fixed 70% 0px;
+  min-height: 100%;
+  padding: 115px 0 140px; }
+
+.textonBottomTheirBlock {
+  margin-top: 50px;
+  margin-left: 740px;
+  margin-right: 567px; }
+  .textonBottomTheirBlock h1 {
+    color: #525252;
+    font-family: "Oswald", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 3px; }
+
+.lineThirdBlock {
+  margin-top: 22px;
+  border-top: 1px solid #9C9C9C;
+  margin-left: 166px;
+  width: 16%; }
+
+.firstMenuThirdBlock {
+  margin-top: 62px;
+  margin-left: 823px;
+  position: relative;
+  color: #8c8c8c;
+  letter-spacing: 2px;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 300; }
+
+.secondMenuThirdBlock {
+  margin-top: -21px;
+  margin-left: 873px;
+  position: relative;
+  color: #8c8c8c;
+  letter-spacing: 2px;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 300; }
+
+.thirdMenuThirdBlock {
+  margin-top: -21px;
+  margin-left: 957px;
+  position: relative;
+  color: #8c8c8c;
+  letter-spacing: 2px;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 300; }
+
+.fourthMenuThirdBlock {
+  margin-top: -21px;
+  margin-left: 1041px;
+  position: relative;
+  color: #8c8c8c;
+  letter-spacing: 2px;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 300; }
+
+.containerOfPicturesThirdBlock {
+  position: relative;
+  height: 877.282px;
+  top: 30px;
+  left: 365px; }
+
+.firstPicPadding {
+  position: absolute;
+  float: left;
+  padding: 10px; }
+
+.secondPic {
+  left: 585px;
+  position: absolute;
+  padding: 20px;
+  top: -10px; }
+
+.thirdPic {
+  left: 877px;
+  position: absolute;
+  padding: 25px;
+  top: -15px; }
+
+.parralUnion {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+h1 {
+  color: #aca9a9;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.1; }
+
+span {
+  display: block;
+  font-family: inherit;
+  font-size: 80px;
+  font-weight: 500;
+  color: #3a3a3a;
+  letter-spacing: 4px; }
+
+.ruska {
+  position: relative;
+  margin-left: 7.5%; }
+  .ruska :before {
+    position: absolute;
+    left: -98px;
+    top: 15px;
+    height: 2px;
+    width: 80px;
+    content: "";
+    background-color: #3a3a3a; }
+
+.fourthPic {
+  top: 292px;
+  position: absolute;
+  padding: 10px;
+  left: 0px;
+  padding-top: 15px; }
+
+.fifthPic {
+  left: 2px;
+  top: 292px;
+  padding-right: 10px;
+  padding-left: 300px;
+  padding-top: 15px;
+  padding-bottom: 10px; }
+
+/*# sourceMappingURL=work.component.css.map */

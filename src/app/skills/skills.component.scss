@@ -1,0 +1,60 @@
+$paddingtop : 115px;
+$fontForFirstBlock : 'Oswald', sans-serif;
+$letterSpacingForFourthBlock : 2px;
+$letterSpacinfForFirstBlock : 4px;
+
+
+@mixin paddingforparallax($padding){
+    padding-left: $padding;
+    padding-right: $padding;
+}
+
+@mixin fonts($fontForFirstBlock, $fontSize, $fontWeight){
+    font-family: $fontForFirstBlock;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+}
+
+
+fourthBlock {
+    background: url("../../assets/fourthBlock.jpg") no-repeat fixed 70% 80px;
+    padding: $paddingtop 0px 0px;
+    min-height: 100%;
+  }
+  
+  .diagram {
+    margin-left: 440px;
+  }
+
+.ruska {
+   position: relative;
+   margin-left: 7.5%; }
+    .ruska :before {
+        position: absolute;
+        left: -98px;
+        top: 15px;
+        height: 2px;
+        width: 80px;
+        content: "";
+        background-color: #3a3a3a; }
+
+        .parralUnion {
+            @include paddingforparallax(15px);
+            margin-right: auto;
+            margin-left: auto;
+          }
+          
+          h1 {
+            color: #aca9a9;
+            @include fonts($fontForFirstBlock, 30px, 700);
+            margin: 0;
+            line-height: 1.1;
+          }
+          
+          span {
+            display: block;
+            @include fonts(inherit, 80px, 500);
+            color: #3a3a3a;
+            letter-spacing: $letterSpacinfForFirstBlock;
+          }
+          

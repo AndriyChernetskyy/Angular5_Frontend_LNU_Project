@@ -1,0 +1,143 @@
+$paddingtop : 115px;
+$letterSpacingForFourthBlock : 2px;
+$fontForFirstBlock : 'Oswald', sans-serif;
+$imageWidthPropTeam : 90%;
+$imageMargLPropTeam : 37px;
+$imageMargTPropTeam : 23px;
+
+
+
+@mixin fonts($fontForFirstBlock, $fontSize, $fontWeight){
+    font-family: $fontForFirstBlock;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+}
+
+
+.secondBlock {
+    background: url("../../assets/secondBlock.jpg") no-repeat fixed 70% 0px;
+    padding: $paddingtop 0px 0px;
+    min-height: 75%;
+  }
+  
+  .cont {
+    margin-left: 567px;
+    margin-right: 567px;
+  }
+  
+  .marginfromtop {
+    margin-top: 75px;
+  }
+  
+  .secondBlockText {
+    color: #737373;
+    max-width: 790px;
+    text-align: center;
+    @include fonts($fontForFirstBlock, 18px, 300);
+    margin-top: 43px;
+    line-height: 35px;
+    letter-spacing: 1px;
+    display: flex;
+  }
+  
+  .beforeh1 h1 {
+    @include fonts($fontForFirstBlock, 100px, 700);
+    color: #e9e9e9;
+    letter-spacing: 10px;
+    margin-left: 350px;
+  }
+  
+  .difference {
+    margin-left: 395px;
+    margin-top: -306px;
+  }
+  
+  .underhr1 {
+    @include fonts(inherit, 14px, 300);
+    line-height: 26px;
+    color: #828282;
+    letter-spacing: .8px;
+    margin-left: 380px;
+    margin-right: 800px;
+    margin-top: 28px;
+    width: 360px;
+  }
+  
+  .ruska {
+    position: relative;
+    margin-left: 7.5%; }
+    .ruska :before {
+        position: absolute;
+        left: -98px;
+        top: 15px;
+        height: 2px;
+        width: 80px;
+        content: "";
+        background-color: #3a3a3a; }
+
+  .textOnNumber {
+    margin-left: 380px;
+    margin-top: -75px;
+    h3 {
+      color: #525252;
+      @include fonts($fontForFirstBlock, 18px, 600);
+      letter-spacing: $letterSpacingForFourthBlock;
+    }
+    h4 {
+      color: #5f5e5e;
+      @include fonts($fontForFirstBlock, 12px, 300);
+      letter-spacing: $letterSpacingForFourthBlock;
+      margin-top: -12px;
+    }
+  }
+  
+  .original {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-top: 1px solid #cfcfcf;
+    margin-left: 380px;
+    width: 5%;
+  }
+  
+  .child1 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-top: 1px solid #cfcfcf;
+    margin-left: 380px;
+    width: 6%;
+  }
+  
+  .child2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-top: 1px solid #cfcfcf;
+    margin-left: 380px;
+    width: 7%;
+  }
+  
+  .underhr {
+    line-height: 26px;
+    font-size: 14px;
+    color: #828282;
+    letter-spacing: 0.8px;
+    margin-left: 380px;
+    margin-right: 1200px;
+    margin-top: 28px;
+    width: 360px;
+  }
+  
+  .difference1 {
+    margin-left: 780px;
+    margin-top: -306px;
+  }
+  
+  .underhr2 {
+    @include fonts(inherit, 14px, 300);
+    line-height: 26px;
+    color: #828282;
+    letter-spacing: .8px;
+    margin-left: 380px;
+    margin-right: 430px;
+    margin-top: 28px;
+    width: 360px;
+  }
